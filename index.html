@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordsearch Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Coding Wordsearch</h1>
+    <p id="instructions">
+        Select two letters in a straight line to highlight a hidden word.
+        Words may appear horizontally, vertically, or diagonally—forward or backward.
+        Good luck!
+    </p>
+
+    <div id="game-wrapper">
+        <div id="grid"></div>
+        <div id="word-bank">
+            <h2>Find these words:</h2>
+            <div class="word-columns">
+                <ul id="words-left"></ul>
+                <ul id="words-right"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
