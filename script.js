@@ -177,3 +177,20 @@ for (let row = 0; row < gridSize; row++) {
         grid.appendChild(cell);
     }
 }
+
+let scale = 1;
+const minZoom = 0.5;
+const maxZoom = 2;
+const zoomStep = 0.1;
+
+grid.addEventListener("wheel", (e) => {
+  if (e.ctrlKey || e.metaKey || e.altKey) return; // Let browser handle pinch/gesture zoom
+
+  e.preventDefault();
+
+  const delta = e.deltaY > 0 ? -zoomStep : zoomStep;
+  scale = Math.min(maxZoom, Math.max(minZoom, scale + delta));
+
+  grid.style.transform = `scale(${scale})`;
+  grid.style.transformOrigin = "top center";
+});

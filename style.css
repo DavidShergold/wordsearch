@@ -28,6 +28,7 @@ body {
 
 .cell:hover {
   background: #444;
+  transition: background 0.2s;
 }
 
 .found {
@@ -66,3 +67,4 @@ body {
   font-size: 1.1em;
   line-height: 1.4;
 }
+
