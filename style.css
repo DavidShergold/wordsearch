@@ -141,3 +141,22 @@ body {
 
 .cyberpunk-theme #theme-toggle {
   box-shadow: 0 0 10px #00fdfd, 0 0 20px #00fdfd
+
+#grid-wrapper {
+  display: inline-block;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.cyberpunk-theme #grid-wrapper {
+  box-shadow:
+    0 0 15px #00fdfd,
+    0 0 30px #00fdfd inset,
+    0 0 60px rgba(0, 253, 253, 0.2);
+  border: 1px solid #00fdfd;
+}
+
+.cyberpunk-theme .cell {
+  text-shadow: 0 0 4px #00fdfd, 0 0 6px #00fdfd;
+}
+

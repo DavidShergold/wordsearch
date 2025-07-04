@@ -206,3 +206,4 @@ toggleBtn.addEventListener("click", () => {
 
   toggleBtn.textContent = cyberpunkOn ? "Switch to Dark Mode" : "Switch to Cyberpunk";
 });
+
