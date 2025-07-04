@@ -194,3 +194,15 @@ grid.addEventListener("wheel", (e) => {
   grid.style.transform = `scale(${scale})`;
   grid.style.transformOrigin = "top center";
 });
+
+const toggleBtn = document.getElementById("theme-toggle");
+
+let cyberpunkOn = false;
+
+toggleBtn.addEventListener("click", () => {
+  cyberpunkOn = !cyberpunkOn;
+
+  document.body.classList.toggle("cyberpunk-theme", cyberpunkOn);
+
+  toggleBtn.textContent = cyberpunkOn ? "Switch to Dark Mode" : "Switch to Cyberpunk";
+});
